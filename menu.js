@@ -1,0 +1,10 @@
+document
+	.getElementById("nameForm")
+	.addEventListener("submit", function (event) {
+		event.preventDefault();
+		const name = document.getElementById("playerName").value.trim();
+		if (name) {
+			sessionStorage.setItem("playerName", name);
+			window.location.href = "game.html";
+		}
+	});
