@@ -87,11 +87,12 @@ function checkQuestion() {
 				sessionStorage.setItem("win", "1");
 				console.log("just set it to 1");
 				window.location.href = "gameover.html";
+			} else {
+				questionIndex++;
+				resetButtons();
+				displayQuestion();
+				lives = 2;
 			}
-			questionIndex++;
-			resetButtons();
-			displayQuestion();
-			lives = 2;
 		} else {
 			alert("Incorrect!");
 			resetButtons();
@@ -120,7 +121,6 @@ const resetButtons = () => {
 
 const changeSelected = (index) => {
 	resetButtons();
-
 	selected = index;
 	document.getElementById(`button${selected + 1}`).style.backgroundColor =
 		"red";
