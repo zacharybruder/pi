@@ -8,3 +8,7 @@ document
 			window.location.href = "game.html";
 		}
 	});
+
+if (sessionStorage.getItem("win") === "1") {
+	window.location.href = "gameover.html";
+}
