@@ -1,11 +1,4 @@
-h1 {
-    font-size: 1.5em;
-}
-
-button {
-    background-color: white;
-}
-
+/* General Styles */
 body {
     display: flex;
     flex-direction: column;
@@ -13,50 +6,114 @@ body {
     justify-content: center;
     margin: 0;
     height: 100vh;
-    overflow: hidden;
+    font-family: Arial, sans-serif;
 }
 
+/* Responsive Typography */
+h1 {
+    font-size: clamp(2rem, 5vw, 4em); /* Scales dynamically */
+    text-align: center;
+}
+
+p {
+    font-size: clamp(1.5rem, 3vw, 3em);
+    text-align: center;
+}
+
+input {
+    font-size: clamp(1.5rem, 3vw, 2.5em);
+    padding: 10px;
+}
+
+/* Buttons */
+button {
+    background-color: white;
+    font-size: clamp(1.5rem, 3vw, 2.5em);
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+/* Panels */
 #scorePane {
     /* background-color: rgb(255, 97, 97); */
-    width: 100%;
+    width: 100vw;
     height: 10vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: clamp(1.5rem, 3vw, 2em);
+    flex-direction: column;
+    line-height: 0px;
+    padding: 10px;
 }
+
 #infoPane {
     /* background-color: rgb(255, 184, 102); */
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     height: 20vh;
+    padding: 10px;
 }
+
+/* Button Pane Adjustments */
 #buttonPane {
-    /* background-color: gold; */
     width: 100%;
-    height: 60vh;
+    height: 50vh;
+    margin: 50px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+    padding: 10px;
+    gap: 16px;
 }
+
 #buttonPane button {
-    width: 90%;
-    margin: 10px 0 10px 0;
-    height: 18%;
-    border-radius: 10px;
+    width: 45%; /* Better for desktop layout */
+    height: auto;
+    font-size: clamp(1.5rem, 3vw, 2em);
 }
+
+/* Submit Button */
 #submitPane {
-    /* background-color: rgb(107, 255, 117); */
     width: 100%;
     height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 #submitPane button {
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 5vh;
+    font-size: clamp(1.5rem, 3vw, 2em);
+    border-radius: 10px;
+}
+
+/* Responsive Layout for Larger Screens */
+@media (min-width: 1024px) {
+    #buttonPane {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #buttonPane button {
+        width: 30%;
+        height: 15%;
+    }
+
+    #submitPane button {
+        width: 30%;
+    }
 }
