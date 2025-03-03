@@ -2,38 +2,18 @@ const playerName = sessionStorage.getItem("playerName") || "Wildcat";
 
 let questions = [
 	{
-		prompt: "What is the capital of France?",
-		options: ["Berlin", "Madrid", "Paris", "Rome"],
-		answer: "Paris",
+		prompt: "What year was Pi Day first celebrated?",
+		options: ["1956", "1988", "1975", "1995"],
+		answer: "1988",
 	},
 	{
-		prompt: "Which planet is known as the Red Planet?",
-		options: ["Earth", "Mars", "Jupiter", "Saturn"],
-		answer: "Mars",
+		prompt: "Which famous scientist's birthday coincides with Pi Day?",
+		options: ["Archimedes", "Charels Darwin", "Albert Einstein", "Isaac Newton"],
+		answer: "Johann Lambert",
 	},
 	{
-		prompt: "What is the largest ocean on Earth?",
-		options: [
-			"Atlantic Ocean",
-			"Indian Ocean",
-			"Arctic Ocean",
-			"Pacific Ocean",
-		],
-		answer: "Pacific Ocean",
-	},
-	{
-		prompt: "Who wrote 'To Kill a Mockingbird'?",
-		options: [
-			"Harper Lee",
-			"Mark Twain",
-			"Ernest Hemingway",
-			"F. Scott Fitzgerald",
-		],
-		answer: "Harper Lee",
-	},
-	{
-		prompt: "What is the name of the mathematician who first rigorously proved that π is irrational?",
-		options: ["Euclid", "Pythagoras", "Johann Lambert", "Isaac Newton"],
+		prompt: "What is the shape most commonly associated with Pi",
+		options: ["Circle", "Square", "Triangle", "Oval"],
 		answer: "Johann Lambert",
 	},
 ];
