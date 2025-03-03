@@ -31,6 +31,11 @@ let questions = [
 		],
 		answer: "Harper Lee",
 	},
+	{
+		prompt: "What is the name of the mathematician who first rigorously proved that π is irrational?",
+		options: ["Euclid", "Pythagoras", "Johann Lambert", "Isaac Newton"],
+		answer: "Johann Lambert",
+	},
 ];
 
 Array.prototype.shuffle = function () {
