@@ -9,11 +9,16 @@ let questions = [
 	{
 		prompt: "Which famous scientist's birthday coincides with Pi Day?",
 		options: ["Archimedes", "Charels Darwin", "Albert Einstein", "Isaac Newton"],
-		answer: "Johann Lambert",
+		answer: "Albert Einstein",
 	},
 	{
 		prompt: "What is the shape most commonly associated with Pi",
 		options: ["Circle", "Square", "Triangle", "Oval"],
+    answer: "Circle",
+  },
+  {
+		prompt: "What is the name of the mathematician who first rigorously proved that π is irrational?",
+		options: ["Euclid", "Pythagoras", "Johann Lambert", "Isaac Newton"],
 		answer: "Johann Lambert",
 	},
 ];
