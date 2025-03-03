@@ -6,6 +6,10 @@ let questions = [
 		options: ["Euclid", "Pythagoras", "Johann Lambert", "Isaac Newton"],
 		answer: "Johann Lambert",
 	},
+	{
+		prompt: "What is the mathematical symbol for pi?",
+		options: ["𝜃", "𝛥", "𝟇", "𝝿"],
+		answer: "𝝿",
 ];
 
 Array.prototype.shuffle = function () {
