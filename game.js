@@ -2,36 +2,6 @@ const playerName = sessionStorage.getItem("playerName") || "Wildcat";
 
 let questions = [
 	{
-		prompt: "What is the capital of France?",
-		options: ["Berlin", "Madrid", "Paris", "Rome"],
-		answer: "Paris",
-	},
-	{
-		prompt: "Which planet is known as the Red Planet?",
-		options: ["Earth", "Mars", "Jupiter", "Saturn"],
-		answer: "Mars",
-	},
-	{
-		prompt: "What is the largest ocean on Earth?",
-		options: [
-			"Atlantic Ocean",
-			"Indian Ocean",
-			"Arctic Ocean",
-			"Pacific Ocean",
-		],
-		answer: "Pacific Ocean",
-	},
-	{
-		prompt: "Who wrote 'To Kill a Mockingbird'?",
-		options: [
-			"Harper Lee",
-			"Mark Twain",
-			"Ernest Hemingway",
-			"F. Scott Fitzgerald",
-		],
-		answer: "Harper Lee",
-	},
-	{
 		prompt: "What is the name of the mathematician who first rigorously proved that π is irrational?",
 		options: ["Euclid", "Pythagoras", "Johann Lambert", "Isaac Newton"],
 		answer: "Johann Lambert",
